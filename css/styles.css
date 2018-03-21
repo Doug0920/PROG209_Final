@@ -1,0 +1,106 @@
+* { margin: 0; 
+	padding: 0;
+}
+
+@font-face {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#introScreen {
+	margin: 50px auto;
+	padding: 50px 30px;
+	width: 600px;
+	height: 600px;
+	position: relative;
+	background-color: #886060;
+	font-family: Arial, sans-serif;
+}
+#title {
+	font-size: 32px;
+	line-height: 1.1em;
+}
+#introScreen img {
+	float: left;
+	margin-right: 20px;
+}
+#introScreen h3 {
+	clear: both;
+	font-family: spaceAge;
+	margin-top: 40px;
+}
+#introScreen div {
+	margin-top: 40px;
+	text-align: center;
+}
+
+button {
+	font-family: spaceAge;
+	font-size: 150%;
+	padding: 4px 8px;
+	cursor: pointer;
+	color: white;
+
+	border-radius: 10px;
+
+}
+#gameScreen {
+	margin: 50px auto;
+	width: 600px;
+	height: 600px;
+	background-image: url("../images/cityscape_photo-1404258.jpg");
+	display:none;
+	position: relative;
+}
+#rocket {
+	position: absolute;
+	display: none;
+}
+#torpedo {
+	position: absolute;
+}
+#ufo {
+	position: absolute;
+	display: none;
+	top: 100px;
+	left: 30px;
+}
+#gameUI {
+	width: 560px;
+	height: 50px;
+	padding: 10px 20px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+}
+#gameInfo {
+	width: 450px;
+	height: 120px;
+	font-size: 120%;
+	float: left;
+}
+#gameControls {
+	width: 50px;
+	height: 55px;
+	padding-top: 5px;
+	float:left;
+}
+
+#grid
+{
+  position: relative;
+  width:  512px;		// 8x8 of 64px
+  height: 512px;
+  background-image: url("../images/cityscape_photo-1404258.jpg");
+  opacity: 0.5;
+}
+
+.cell
+{
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+
+p {	width: 500px; }
