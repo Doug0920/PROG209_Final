@@ -156,21 +156,6 @@ function keydownHandler(event) {
 	render( );		// display result of player & monster moves
 }
 
-//TEST
-/*
-
-function moveMonster()
-{
-	// stub
-}
-
-function endGame()
-{
-	// stub
-}
-*/
-
-
 function render()
 {
 	// Clear the grid of img tag cells previously created
@@ -260,9 +245,6 @@ function render()
 	//Display the game message
 	output.innerHTML = gameMessage;
 }
-
-
-
 
 function moveMonster()
 {
