@@ -200,6 +200,7 @@ function render()
 			{
 			case EMPTY:
 				cell.src = "./images/empty.png";
+				cell.style.opacity="0.7";
 				break;
 
 			case HOUSE:
