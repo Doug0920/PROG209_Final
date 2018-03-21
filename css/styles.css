@@ -11,8 +11,8 @@
 #introScreen {
 	margin: 50px auto;
 	padding: 50px 30px;
-	width: 600px;
-	height: 600px;
+	width: 800px;
+	height: 800px;
 	position: relative;
 	background-color: #886060;
 	font-family: Arial, sans-serif;
@@ -36,35 +36,18 @@
 }
 
 button {
-	font-family: spaceAge;
 	font-size: 150%;
 	padding: 4px 8px;
 	cursor: pointer;
-	color: white;
-
+	color: blue;
 	border-radius: 10px;
-
 }
 #gameScreen {
-	margin: 50px auto;
-	width: 600px;
-	height: 600px;
-	background-image: url("../images/cityscape_photo-1404258.jpg");
+	margin: 0px;
+	width: 512px;
+	height: 700px;
 	display:none;
 	position: relative;
-}
-#rocket {
-	position: absolute;
-	display: none;
-}
-#torpedo {
-	position: absolute;
-}
-#ufo {
-	position: absolute;
-	display: none;
-	top: 100px;
-	left: 30px;
 }
 #gameUI {
 	width: 560px;
@@ -88,11 +71,11 @@ button {
 
 #grid
 {
+		// 8x8 of 64px
   position: relative;
-  width:  512px;		// 8x8 of 64px
+  width:  512px;
   height: 512px;
   background-image: url("../images/cityscape_photo-1404258.jpg");
-  opacity: 0.5;
 }
 
 .cell
@@ -103,4 +86,4 @@ button {
   height: 64px;
 }
 
-p {	width: 500px; }
+p {	width: 700px; }
