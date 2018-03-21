@@ -139,6 +139,11 @@ function keydownHandler(event) {
 			}
 		}
 	}
+	if (map[playerRow][playerColumn] == GOAL)
+	{
+		//		Win game if reached goal before touching monster
+		endGame();
+	}
 
 	moveMonster();		//	Move monster after player chooses move
 
@@ -158,12 +163,13 @@ function moveMonster()
 {
 	// stub
 }
-*/
 
 function endGame()
 {
 	// stub
 }
+*/
+
 
 function render()
 {
@@ -323,9 +329,9 @@ function moveMonster()
 			} else if (possDistance == minDistance) {
 				minDistDirection.push(MOVELEFT);				// add to list of min-distance moves
 			}
-		}
+		}	
 	}
-	if(monsterColumn < COLUMNS - 1)
+	if(monsterColumn < COLS - 1)
 	{
 		var thingToTheRight = map[monsterRow][monsterColumn + 1];
 		if(thingToTheRight === EMPTY)
@@ -393,7 +399,7 @@ function moveMonster()
 		gameObj[monsterRow][monsterColumn] = MONSTER;
 	}
 }
-/*
+
 function endGame() {
 	if(map[playerRow][playerColumn] === GOAL)
 	{
@@ -412,4 +418,3 @@ function endGame() {
 	// Remove the keyboard listener to end the game
 	window.removeEventListener("keydown", keydownHandler, false);
 }
-*/
